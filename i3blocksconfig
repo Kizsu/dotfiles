@@ -1,0 +1,25 @@
+color=#FBCAEF
+separator_block_width=30
+command=~/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+markup=pango
+
+[arch-update]
+QUIET=true
+interval=3600
+
+[aur-update]
+markup=pango
+interval=3600
+format=json
+QUIET=true
+
+[volume-pulseaudio]
+LONG_FORMAT=<span color='#1282A2'>VOL </span> ${VOL}%
+#label=<span color="#1282A2">VOL </span>
+interval=once
+signal=1
+#SUBSCRIBE=1
+
+[TIME]
+command=date +"%a %d-%m-%Y %H:%M"
+interval=1

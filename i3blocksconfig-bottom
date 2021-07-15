@@ -1,0 +1,43 @@
+separator_block_width=20
+color=#FBCAEF
+command=~/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
+markup=pango
+separator=false
+
+[uptime]
+label=<span color="#1282A2">UP </span>
+command=uptime -p | cut -b 4-
+interval=60
+
+[cpu_usage]
+interval=10
+LABEL=<span color="#1282A2">CPU </span>
+DECIMALS=2
+T_WARN=60
+T_CRIT=80
+
+[memory]
+interval=30
+label=<span color="#1282A2">MEM </span>
+
+[swap]
+command=~/.config/i3blocks/memory/memory
+instance=swap
+interval=30
+label=<span color="#1282A2">SWP </span>
+
+[DISK]
+command=df -h /home/tk | awk '/\//{ printf("%4s/%s\n", $3, $2) }'
+interval=60
+label=<span color="#1282A2">HOME </span>
+
+[DISKSSD]
+command=df -h /mnt/ssd | awk '/\//{ printf("%4s/%s\n", $3, $2) }'
+interval=60
+label=<span color="#1282A2">SSD </span>
+
+[DISKFHDD]
+command=ssh -p 7184 tk@172.24.1.218 df -h /mnt/exhdd | awk '/\//{ printf("%4s/%s\n", $3, $2) }'
+interval=120
+label=<span color="#1282A2">HDD </span>
+min_width=150
