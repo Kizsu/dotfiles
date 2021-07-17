@@ -220,16 +220,16 @@ bindsym $mod+Mod2+KP_9 workspace number 19
 bindsym $mod+Mod2+KP_0 workspace number 20
 
 # move focused container to workspace
-bindsym $mod+Shift+Mod2+KP_1 move container to workspace number 11
-bindsym $mod+Shift+Mod2+KP_2 move container to workspace number 12
-bindsym $mod+Shift+Mod2+KP_3 move container to workspace number 13
-bindsym $mod+Shift+Mod2+KP_4 move container to workspace number 14
-bindsym $mod+Shift+Mod2+KP_5 move container to workspace number 15
-bindsym $mod+Shift+Mod2+KP_6 move container to workspace number 16
-bindsym $mod+Shift+Mod2+KP_7 move container to workspace number 17
-bindsym $mod+Shift+Mod2+KP_8 move container to workspace number 18
-bindsym $mod+Shift+Mod2+KP_9 move container to workspace number 19
-bindsym $mod+Shift+Mod2+KP_0 move container to workspace number 20
+bindsym $mod+Control+Mod2+KP_1 move container to workspace number 11
+bindsym $mod+Control+Mod2+KP_2 move container to workspace number 12
+bindsym $mod+Control+Mod2+KP_3 move container to workspace number 13
+bindsym $mod+Control+Mod2+KP_4 move container to workspace number 14
+bindsym $mod+Control+Mod2+KP_5 move container to workspace number 15
+bindsym $mod+Control+Mod2+KP_6 move container to workspace number 16
+bindsym $mod+Control+Mod2+KP_7 move container to workspace number 17
+bindsym $mod+Control+Mod2+KP_8 move container to workspace number 18
+bindsym $mod+Control+Mod2+KP_9 move container to workspace number 19
+bindsym $mod+Control+Mod2+KP_0 move container to workspace number 20
 
 # Gaps
 #gaps inner 5
@@ -241,7 +241,7 @@ for_window[class="Steam"] floating enable
 for_window[class="Steam" title="^Steam$"] floating disable
 for_window[class="Galculator"] floating enable
 for_window[class="Lightdm-settings"] floating enable
-#for_window[name="Minecraft Launcher"] floating enable
+for_window[class="persepolis"] floating enable
 
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
 for_window [class="^Steam$" title="^Friends$"] floating enable
