@@ -4,6 +4,11 @@ command=~/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
 markup=pango
 separator=false
 
+[ip]
+command=echo $(curl ifconfig.me)
+label=<span color="#1282A2">IP </span>
+interval=120
+
 [uptime]
 label=<span color="#1282A2">UP </span>
 command=uptime -p | cut -b 4-

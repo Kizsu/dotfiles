@@ -258,6 +258,8 @@ for_window [title="^Steam Keyboard$"] floating enable
 # Game workspace rules
 for_window [class="steam_app_646570"] move container to workspace 10
 for_window [class="steam_app_1145360"] move container to workspace 10
+for_window [class="Wildermyth"] move container to workspace 10
+for_window [class="SpeedRunners.bin.x86_64"] move container to workspace 10
 assign [class="Minecraft"] 10
 
 # Workspace rules
